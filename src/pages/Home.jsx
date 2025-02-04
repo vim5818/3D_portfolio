@@ -1,5 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useRef, useState } from "react";
+import React from 'react';
+import { MousePointer } from 'lucide-react';
 
 import sakura from "../assets/sakura.mp3";
 import { HomeInfo, Loader } from "../components";
@@ -103,7 +105,6 @@ const Home = () => {
           />
         </Suspense>
       </Canvas>
-
       <div className='absolute bottom-2 left-2'>
         <img
           src={!isPlayingMusic ? soundoff : soundon}
@@ -111,6 +112,10 @@ const Home = () => {
           onClick={() => setIsPlayingMusic(!isPlayingMusic)}
           className='w-10 h-10 cursor-pointer object-contain'
         />
+      </div>
+      <div className='absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-white/80 backdrop-blur-sm rounded-lg px-3 py-2 flex items-center gap-2'>
+        <MousePointer className='w-4 h-4' />
+        <span className='text-sm font-medium'>Click Left mouse button and Scroll to right to see more info</span>
       </div>
     </section>
   );

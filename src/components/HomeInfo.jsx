@@ -1,20 +1,54 @@
 import { Link } from "react-router-dom";
 
-import { arrow } from "../assets/icons";
+import { arrow, indiaflagicon, imagethi, g1 } from "../assets/icons";
 
 const HomeInfo = ({ currentStage }) => {
   if (currentStage === 1)
     return (
       <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
         Hi, I'm
-        <span className='font-semibold mx-2 text-white'>Adrian</span>
+        <span className='font-semibold mx-2 text-white'>Vignesh Mahalingam</span>
         👋
         <br />
-        A Software Engineer from Croatia 🇭🇷
+        Experienced Engineer in Autonomous Trucks development, AI, MLOps, DataOps
       </h1>
     );
 
-  if (currentStage === 2) {
+    if (currentStage === 2) {
+      return (
+        <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5">
+          I have a
+          <br />
+          <span className="font-semibold mx-2 text-white">
+            Master's in Engineering - International Automotive Engineering from Technische Hochschule Ingolstadt
+            <span className="inline-flex items-center ml-2">
+              <img
+                src={imagethi}
+                alt="flag"
+                className="w-8 h-8 object-contain mr-2"
+              />
+            </span>
+          </span>
+          <br />
+          
+          <br />
+          <span className="font-semibold mx-2 text-white">
+            Bachelor's in Technology - Mechanical Engineering from
+            <span className="inline-flex items-center ml-2">
+              India
+              <img
+                src={indiaflagicon}
+                alt="flag"
+                className="w-8 h-5 object-contain ml-2"
+              />
+            </span>
+          </span>
+        </h1>
+      );
+    }
+    
+
+  if (currentStage === 3) {
     return (
       <div className='info-box'>
         <p className='font-medium sm:text-xl text-center'>
@@ -29,7 +63,7 @@ const HomeInfo = ({ currentStage }) => {
     );
   }
 
-  if (currentStage === 3) {
+  if (currentStage === 4) {
     return (
       <div className='info-box'>
         <p className='font-medium text-center sm:text-xl'>
@@ -44,7 +78,7 @@ const HomeInfo = ({ currentStage }) => {
     );
   }
 
-  if (currentStage === 4) {
+  if (currentStage === 5) {
     return (
       <div className='info-box'>
       <p className='font-medium sm:text-xl text-center'>

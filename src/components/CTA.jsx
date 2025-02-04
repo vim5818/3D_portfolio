@@ -4,12 +4,16 @@ const CTA = () => {
   return (
     <section className='cta'>
       <p className='cta-text'>
-        Have a project in mind? <br className='sm:block hidden' />
-        Let’s build something together!
+        I am ready to be part of technology driven organization
+        <br className='sm:block hidden' />
+        Am I an interesting candidate? Please write to me at {" "}
+        <a 
+          href="mailto:vignesh.mahalingam@outlook.de" 
+          className="email-link"
+        >
+          vignesh.mahalingam@outlook.de
+        </a>
       </p>
-      <Link to='/contact' className='btn'>
-        Contact
-      </Link>
     </section>
   );
 };

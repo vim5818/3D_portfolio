@@ -15,15 +15,14 @@ const About = () => {
         Hello, I'm{" "}
         <span className='blue-gradient_text font-semibold drop-shadow'>
           {" "}
-          Adrian
+          Vignesh Mahalingam
         </span>{" "}
         👋
       </h1>
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-          Software Engineer based in Croatia, specializing in technical
-          education through hands-on learning and building applications.
+          Experienced Engineer and Leader with motivation to build products like Autonomous Systems (not limited to) using AI, MLOps, DataOps
         </p>
       </div>
 
@@ -50,12 +49,13 @@ const About = () => {
         <h3 className='subhead-text'>Work Experience.</h3>
         <div className='mt-5 flex flex-col gap-3 text-slate-500'>
           <p>
-            I've worked with all sorts of companies, leveling up my skills and
+            I've worked with technology companies like Robert Bosch, Torc Robotics and Knorr-Bremse, developing ADAS, Automated Driving Software.
+            I bring hands-on experience in developing and deploying AI models, 
             teaming up with smart people. Here's the rundown:
           </p>
         </div>
 
-        <div className='mt-12 flex'>
+        <div className='mt flex'>
           <VerticalTimeline>
             {experiences.map((experience, index) => (
               <VerticalTimelineElement
@@ -67,7 +67,7 @@ const About = () => {
                     <img
                       src={experience.icon}
                       alt={experience.company_name}
-                      className='w-[60%] h-[60%] object-contain'
+                      className='w-[70%] h-[60%] object-contain'
                     />
                   </div>
                 }
@@ -83,18 +83,18 @@ const About = () => {
                     {experience.title}
                   </h3>
                   <p
-                    className='text-black-500 font-medium text-base'
+                    className='text-black font-medium text-base'
                     style={{ margin: 0 }}
                   >
                     {experience.company_name}
                   </p>
                 </div>
 
-                <ul className='my-5 list-disc ml-5 space-y-2'>
+                <ul className='my-1 list-disc ml-1 space-y-2'>
                   {experience.points.map((point, index) => (
                     <li
                       key={`experience-point-${index}`}
-                      className='text-black-500/50 font-normal pl-1 text-sm'
+                      className='text-black/50 font-normal pl-1 text-sm'
                     >
                       {point}
                     </li>

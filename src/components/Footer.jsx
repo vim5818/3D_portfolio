@@ -9,6 +9,7 @@ const Footer = () => {
 
       <div className='footer-container'>
         <p>
+          © 2024 <strong>Vignesh Mahalingam</strong>. All rights reserved based on content changed from Adrian. <br />
           © 2023 <strong>Adrian Hajdin</strong>. All rights reserved.
         </p>
 
